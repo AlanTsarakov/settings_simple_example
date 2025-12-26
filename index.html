@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Настройки</h1>
+        <fieldset>
+        <legend>Выберите тему:</legend>
+        <div>
+            <input type="radio" id="white" value="white" name="theme" checked/>
+            <label for="white">Светлая</label>
+        </div>
+         <div>
+            <input type="radio" id="dark" value="dark" name="theme"/>
+            <label for="dark">Темная</label>
+        </div>
+        </fieldset>
+
+        <label for="font">Шрифт:</label>
+        <select name="font" id="font">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Arial">Arial</option>
+        </select>
+
+        <label for="lang">Язык:</label>
+        <select name="lang" id="lang">
+            <option value="russian">русский</option>
+            <option value="english">english</option>
+        </select>
+
+        <button onclick="main()">Сохранить</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
